@@ -135,7 +135,6 @@ legend {
 
 .wrapper {
   overflow: hidden;
-  display: flex;
   flex-direction: column;
   min-height: 100%;
   font-family: 'Geometria';
@@ -150,9 +149,8 @@ main {
   padding: 89px 0px;
 }
 .sticker__header {
-  display: flex;
-  justify-content: center;
   margin-bottom: 84px;
+  text-align: center;
 }
 .sticker__logo img {
   width: 410px;
@@ -167,7 +165,6 @@ main {
 .body__top {
 }
 .top-body {
-  display: flex;
   border-bottom: 6px solid #000000;
 }
 .top-body__left {
@@ -175,7 +172,6 @@ main {
   border-right: 6px solid #000000;
 }
 .top-body__icon {
-  display: flex;
   align-items: center;
   justify-content: center;
   padding: 43px 0px;
@@ -183,7 +179,6 @@ main {
   height: 164px;
 }
 .top-body__number {
-  display: flex;
   align-items: center;
   justify-content: center;
   padding: 43px 0px;
@@ -205,7 +200,6 @@ main {
   font-weight: 500;
 }
 .top-body__right {
-  display: flex;
   justify-content: space-around;
   flex: 0 1 75%;
   /* padding: 43px 0px; */
@@ -243,12 +237,14 @@ main {
   border-bottom: 6px solid #000000;
 }
 .barcode__image {
+  padding-top: 20px;
   margin-bottom: 10px;
 }
 .barcode__image img {
   width: 1008px;
 }
 .barcode__number {
+  padding-bottom: 20px;
   font-size: 33.4px;
   font-weight: 800;
   text-transform: uppercase;
@@ -261,13 +257,11 @@ main {
   border-bottom: 6px solid #000000;
 }
 .table__item {
-  display: flex;
   /* border-bottom: 6px dashed #000000; */
 }
 .table__name {
   flex: 0 1 25%;
   border-right: 6px solid #000000;
-  display: flex;
   align-items: center;
   /* justify-content: center; */
   padding: 43px 20px;
@@ -277,13 +271,12 @@ main {
   text-transform: uppercase;
   font-family: 'Geometria-Bold';
 }
-.dashed {
+/* .dashed {
   border-bottom: 6px dashed #000000;
-}
+} */
 
 .table__value {
   flex: 0 1 75%;
-  display: flex;
   align-items: center;
   padding-left: 100px;
   font-size: 25px;
@@ -294,12 +287,10 @@ main {
 .body__bottom {
 }
 .bottom {
-  display: flex;
 }
 .bottom__qr {
   border-right: 6px solid #000000;
   flex: 0 1 25%;
-  display: flex;
   justify-content: center;
   align-items: center;
   padding: 40px 0px;
@@ -311,7 +302,6 @@ main {
 .bottom__content {
   flex: 0 1 75%;
   padding-left: 100px;
-  display: flex;
   justify-content: center;
   /* align-items: center; */
   flex-direction: column;
@@ -327,4 +317,16 @@ main {
   font-size: 25px;
   line-height: 37px;
   font-weight: 500;
+}
+
+table {
+  width: 1067px;
+  border-collapse: collapse;
+  border-radius: 10px;
+  border: 6px solid #000000;
+  border-spacing: 0;
+  margin-bottom: 30px;
+}
+th {
+  vertical-align: top;
 }
